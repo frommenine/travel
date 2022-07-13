@@ -1,19 +1,20 @@
 @import url('https://fonts.googleapis.com/css2?family=Aleo:ital,wght@0,400;0,700;1,300;1,400;1,700&family=Magra:wght@700&family=Red+Hat+Text:wght@400;500&display=swap');
 
-$main-padding: 0 120px;
-$mobile-padding: 0 15px;
+$main-padding: 0 6.25vw;
+$mobile-padding: 0 3.85vw;
 
 @mixin btn {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 0.52vw;
+    // 10px
     margin: auto;
-    padding: 13px 31px;
+    padding: 0.68vw 1.61vw;
     font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.25vw;
+    line-height: 1.67vw;
     color: #FFFFFF;
     background: #0D606F;
     box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
@@ -31,7 +32,8 @@ html {
 }
 
 body {
-    max-width: 1440px;
+    max-width: 1920px;
+    width: 100%;
     margin: auto;
     // height: 3735px;
     // background-image: url(./assets/img/mainimg-2.png);
@@ -43,11 +45,17 @@ body {
     background-image: url(./assets/img/main-img.png);
     background-size: 100%;
     background-repeat: no-repeat;
-    min-height: 765px;
+    min-height: 39.84vw;
+    width: 100%;
+}
+
+.logo {
+    width: 11.25vw;
 }
 
 .logo-mobile,
-.menu-b {
+.menu-b,
+.logo-reload-mobile {
     display: none;
 }
 
@@ -56,7 +64,7 @@ body {
     justify-content: space-between;
     align-items: center;
     color: #FFFFFF;
-    height: 90px;
+    height: 4.69vw;
     padding: $main-padding;
     background: rgba(242, 120, 92, 0.7);
     box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
@@ -70,6 +78,7 @@ body {
     font-style: normal;
     font-weight: 500;
     font-size: 16px;
+    font-size: 0.83vw;
     line-height: 21px;
 }
 
@@ -96,9 +105,9 @@ body {
     font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 21px;
-    padding: 10px 30px;
+    font-size: 0.83vw;
+    line-height: 1.09vw;
+    padding: 0.52vw 1.56vw;
     color: #FFFFFF;
     background: #0D606F;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
@@ -116,8 +125,7 @@ body {
 }
 
 .preview {
-    // width: 892px;
-    margin-top: 32px;
+    margin-top: 1.67vw;
     padding: $main-padding;
 }
 
@@ -125,8 +133,9 @@ h1 {
     font-family: 'Aleo';
     font-style: normal;
     font-weight: 700;
-    font-size: 80px;
-    line-height: 96px;
+    // font-size: 80px;
+    font-size: 4.17vw;
+    line-height: 5vw;
     color: #FFFFFF;
 }
 
@@ -134,8 +143,8 @@ h1 {
     font-family: 'Aleo';
     font-style: italic;
     font-weight: 700;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.04vw;
+    line-height: 1.25vw;
     color: #FFFFFF;
 }
 
@@ -145,17 +154,17 @@ h1 {
     align-items: center;
     background: rgba(255, 255, 255, 0.7);
     border-radius: 16px;
-    max-width: 892px;
-    height: 95px;
-    padding: 18px 18px 18px 41px;
+    width: 46.46vw;
+    height: 4.95vw;
+    padding: 0.94vw 0.94vw 0.94vw 2.14vw;
 }
 
 .preview__btn-wrap__text {
     font-family: 'Aleo';
     font-style: italic;
     font-weight: 400;
-    font-size: 24px;
-    line-height: 29px;
+    font-size: 1.25vw;
+    line-height: 1.51vw;
     color: #F2785C;
 }
 
@@ -163,20 +172,19 @@ h1 {
     font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 500;
-    font-size: 24px;
-    line-height: 32px;
+    font-size: 1.25vw;
+    line-height: 1.67vw;
     color: #FFFFFF;
     background: #0D606F;
     box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
     border-radius: 10px;
     border: none;
-    padding: 13px 32px;
+    padding: 0.68vw 1.67vw;
     transition: all 0.5s;
 }
 
 .steps {
-    padding: 80px 131px 127px 131px;
-    // margin-top: 80px;
+    padding: 4.17vw 6.82vw 6.61vw 6.82vw;
 
 }
 
@@ -184,11 +192,11 @@ h1 {
     font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
-    line-height: 53px;
+    font-size: 2.08vw;
+    line-height: 2.76vw;
     color: #F2785C;
     text-align: center;
-    margin-bottom: 40px;
+    margin-bottom: 2.08vw;
 }
 
 .steps__list {
@@ -199,15 +207,15 @@ h1 {
 }
 
 .steps-icon {
-    width: 100px;
+    width: 5.21vw;
 }
 
 .steps-text {
     font-family: 'Aleo';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.04vw;
+    line-height: 1.25vw;
     color: #0D606F;
 }
 
@@ -218,35 +226,35 @@ h1 {
 .destinations-title {
     font-family: 'Red Hat Text';
     font-style: normal;
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 53px;
+    font-weight: 500;
+    font-size: 2.08vw;
+    line-height: 2.76vw;
     color: #F2785C;
     text-align: center;
-    margin-bottom: 46px;
+    margin-bottom: 2.40vw;
 }
 
 .destinations__img-wrap {
     display: flex;
     justify-content: space-between;
-    gap: 60px;
+    gap: 3.13vw;
     overflow-x: hidden;
 }
 
 .destinations__img {
-    height: 800px;
+    height: 41.67vw;
 }
 
 .destinations__circles-wrap {
     display: flex;
     justify-content: center;
-    gap: 10px;
-    margin: 24px auto 40px auto;
+    gap: 0.52vw;
+    margin: 1.25vw auto 2.08vw auto;
 }
 
 .destinations__circle {
-    width: 20px;
-    height: 20px;
+    width: 1.04vw;
+    height: 1.04vw;
     border-radius: 100%;
     background: rgba(242, 120, 92, 0.5);
 }
@@ -257,36 +265,37 @@ h1 {
 
 .destinations__btn {
     @include btn;
-    margin-bottom: 80px;
+    margin-bottom: 4.17vw;
     transition: all 0.5s;
-}
 
-// .stories {
-//     background-image: url(./assets/img/mainimg-2.png);
-//     background-repeat: no-repeat;
-//     background-position: bottom;
-// }
+    img {
+        width: 2.08vw;
+    }
+}
 
 .stories-title {
     font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 500;
-    font-size: 40px;
-    line-height: 53px;
+    font-size: 2.08vw;
+    line-height: 2.76vw;
     color: #F2785C;
     text-align: center;
 
 }
 
 .stories-wrap {
+    width: 100%;
     background-image: url(./assets/img/mainimg-2.png);
+    background-size: cover;
     background-repeat: no-repeat;
-    background-position: center 0;
+    background-position: bottom center;
+    margin-top: 0.52vw;
 }
 
 .stories-wrap-white {
     background: rgba(255, 255, 255, 0.7);
-    padding: 50px 120px 41px 119px;
+    padding: 2.60vw 6.25vw 2.14vw 6.20vw;
 
 }
 
@@ -294,14 +303,14 @@ h1 {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 40px;
+    gap: 2.08vw;
     margin: auto;
-    margin-bottom: 40px;
+    margin-bottom: 2.08vw;
 }
 
 
 .stories__card__img {
-    width: 400px;
+    width: 20.83vw;
 }
 
 .stories__card__img-mobile {
@@ -312,8 +321,8 @@ h1 {
     font-family: 'Aleo';
     font-style: normal;
     font-weight: 400;
-    font-size: 35px;
-    line-height: 42px;
+    font-size: 1.82vw;
+    line-height: 2.19vw;
     color: #0D606F;
     margin: 0;
 }
@@ -326,8 +335,8 @@ h1 {
     font-family: 'Aleo';
     font-style: normal;
     font-weight: 400;
-    font-size: 20px;
-    line-height: 24px;
+    font-size: 1.04vw;
+    line-height: 1.25vw;
     color: #0D606F;
     margin: 0;
 
@@ -335,37 +344,41 @@ h1 {
 
 .read-more {
     font-weight: 700;
-    line-height: 24px;
+    line-height: 1.25vw;
     text-decoration-line: underline;
 }
 
 .stories__btn {
     @include btn;
     transition: all 0.5s;
+
+    img {
+        width: 2.08vw;
+    }
 }
 
 .footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    gap: 40px;
+    gap: 2.08vw;
     padding: $main-padding;
     background-image: url(./assets/img/mainimg-2.png);
+    background-size: cover;
     background-repeat: no-repeat;
     background-position: bottom center;
 }
 
 .empty {
-    width: 141px;
-    height: 61px;
-    // background: #F2785C;
+    width: 7.34vw;
+    height: 3.18vw;
 }
 
 .footer__links {
     display: flex;
     align-items: center;
-    gap: 21px;
-    width: 141px;
+    gap: 1.09vw;
+    // width: 7.34vw;
 
 }
 
@@ -374,19 +387,19 @@ h1 {
     font-family: 'Red Hat Text';
     font-style: normal;
     font-weight: 500;
-    font-size: 16px;
-    line-height: 21px;
+    font-size: 0.83vw;
+    line-height: 1.09vw;
     color: #FFFFFF;
-    width: 260px;
+    width: 13.54vw;
 }
 
 .footer__icon {
-    width: 34px;
+    width: 1.77vw;
     transition: all 0.5s;
 }
 
 .footer__icon-2 {
-    width: 80px;
+    width: 4.17vw;
     transition: all 0.5s;
 
 }
@@ -396,9 +409,17 @@ h1 {
     filter: invert(16%) sepia(10%) saturate(437%) hue-rotate(222deg) brightness(94%) contrast(84%);
 }
 
+// ААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААА
+// ААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААА
+// ААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААА
+// ААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААА
+// ААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААА
+// ААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААА
+// ААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААААА
+
 @media (max-width: 390px) {
     .header {
-        min-height: 251px;
+        min-height: 64.36vw;
     }
 
     .nav {
@@ -406,6 +427,7 @@ h1 {
         background: transparent;
         box-shadow: none;
         background: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%);
+        height: 23.08vw;
     }
 
     .nav__list,
@@ -417,30 +439,41 @@ h1 {
     }
 
     .logo-mobile,
-    .menu-b {
+    .menu-b,
+    .logo-reload-mobile {
         display: block;
+    }
+
+    .logo-mobile {
+        width: 7.69vw;
+    }
+
+    .menu-b {
+        width: 8.97vw;
     }
 
     .preview {
         padding: $mobile-padding;
-        margin-top: 22px;
+        // margin-top: 17.18vw;
     }
 
     .preview__btn-wrap {
-        width: 360px;
-        height: 48px;
-        padding: 9px;
+        width: 92%;
+        height: 12.31vw;
+        padding: 2.31vw;
+        margin: auto;
+        margin-bottom: 15.64vw;
     }
 
     .preview__btn-wrap__text {
-        font-size: 14px;
-        line-height: 17px;
+        font-size: 3.59vw;
+        line-height: 4.36vw;
     }
 
     .preview__btn {
-        padding: 8px 9px;
-        font-size: 11px;
-        line-height: 15px;
+        padding: 2.05vw 2.31vw;
+        font-size: 2.82vw;
+        line-height: 3.85vw;
     }
 
     .steps,
@@ -452,9 +485,9 @@ h1 {
     .steps-title,
     .destinations-title,
     .stories-title {
-        font-size: 14px;
+        font-size: 3.59vw;
         font-weight: 500;
-        line-height: 19px;
+        line-height: 4.87vw;
         margin: 0;
     }
 
@@ -463,27 +496,26 @@ h1 {
     }
 
     .steps-icon {
-        width: 70px;
+        width: 17.95vw;
     }
 
     .steps-text {
-        font-size: 10px;
-        line-height: 12px;
+        font-size: 2.56vw;
+        line-height: 3.08vw;
     }
 
     .steps__item {
-        width: 111px;
-        // text-align: left;
+        width: 28.46vw;
     }
 
     .steps__item:nth-of-type(1) {
-        width: 75px;
+        width: 19.23vw;
         text-align: left;
     }
 
     .steps__item:nth-of-type(3) {
         text-align: right;
-        width: 83px;
+        width: 21.28vw;
     }
 
     .destinations__img-wrap {
@@ -493,40 +525,41 @@ h1 {
     .destinations__slide-mobile-wrap {
         display: block;
         position: relative;
-        margin-top: 20px;
+        margin-top: 5.13vw;
     }
 
     .destinations__img-mobile {
         position: relative;
         border-radius: 16px;
+        width: 92.31vw;
     }
 
     .prev,
     .next {
         position: absolute;
         top: 50%;
-        font-size: 30px;
+        font-size: 7.69vw;
     }
 
     .prev {
-        left: 11px;
+        left: 2.82vw;
         color: rgba(242, 120, 92, 0.5);
     }
 
     .next {
-        right: 11px;
+        right: 2.82vw;
         color: #F2785C;
     }
 
     .destinations__img-mobile-text {
         position: absolute;
-        top: 8px;
-        left: 15px;
+        top: 2.05vw;
+        left: 3.85vw;
         font-family: 'Red Hat Text';
         font-style: normal;
         font-weight: 500;
-        font-size: 20px;
-        line-height: 26px;
+        font-size: 5.13vw;
+        line-height: 6.67vw;
         color: #FFFFFF;
         text-transform: uppercase;
         margin: 0;
@@ -538,33 +571,56 @@ h1 {
 
     .destinations__circles-wrap-mobile {
         position: absolute;
-        bottom: 12px;
-        left: 162px;
+        bottom: 3.08vw;
+        left: 41.54vw;
         display: flex;
         justify-content: center;
-        gap: 6px;
+        gap: 1.54vw;
     }
 
     .destinations__circle {
-        width: 8px;
-        height: 8px;
+        width: 2.05vw;
+        height: 2.05vw;
     }
 
     .destinations__btn {
-        gap: 7px;
-        font-size: 11px;
-        line-height: 15px;
-        padding: 8px 12px;
-        margin: 10px auto 20px auto;
+        gap: 1.79vw;
+        font-size: 2.82vw;
+        line-height: 3.85vw;
+        padding: 2.05vw 3.08vw;
+        margin: 2.56vw auto 5.13vw auto;
 
-        // margin-top: 10px;
         img {
-            width: 10px;
+            width: 2.56vw;
         }
     }
 
+    .stories-wrap {
+        background-image: url(./assets/img/mobile-bg.jpg);
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center bottom -15.38vw;
+        margin-top: 2.56vw;
+    }
+
+    .footer {
+        background-image: url(./assets/img/mobile-bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center bottom;
+    }
+
     .stories-wrap-white {
-        padding: 10px 15px;
+        padding: 2.56vw 3.85vw;
+
+    }
+
+    .stories__card {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2.56vw;
+        margin: auto;
+        margin-bottom: 2.56vw;
     }
 
     .stories__card__img {
@@ -572,19 +628,49 @@ h1 {
     }
 
     .stories__card__img-mobile-wrap {
-        width: 155px;
-        height: 130px;
+        width: 39.74vw;
+        height: 33.33vw;
         background-image: url(./assets/img/stories-1.png);
-        background-size: 100%;
+        background-size: cover;
+        background-position: center;
         background-repeat: no-repeat;
         filter: drop-shadow(0px 4px 4px #0D606F);
-        // border-radius: 16px;
+        border-radius: 16px;
     }
 
-    // .stories__card__img-mobile {
-    //     display: block;
-    //     width: 155px;
-    // }
+    .stories__card__img-mobile-wrap-2 {
+        width: 39.74vw;
+        height: 33.33vw;
+        background-image: url(./assets/img/stories-2.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: drop-shadow(0px 4px 4px #0D606F);
+        border-radius: 16px;
+    }
+
+    .stories__card__img-mobile-wrap-3 {
+        width: 39.74vw;
+        height: 33.33vw;
+        background-image: url(./assets/img/stories-3.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: drop-shadow(0px 4px 4px #0D606F);
+        border-radius: 16px;
+    }
+
+
+    .stories__card__img-mobile-wrap-4 {
+        width: 39.74vw;
+        height: 33.33vw;
+        background-image: url(./assets/img/stories-4.png);
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        filter: drop-shadow(0px 4px 4px #0D606F);
+        border-radius: 16px;
+    }
 
     .stories__card-title {
         font-size: 11px;
@@ -603,8 +689,46 @@ h1 {
         color: #0D606F;
         margin: 0;
         font-weight: 400;
-        font-size: 9px;
-        line-height: 11px;
+        font-size: 2.31vw;
+        line-height: 2.82vw;
+        width: 50vw;
+        margin-top: 2.56vw;
+    }
+
+    .read-more {
+        line-height: 2.82vw;
+    }
+
+    .stories__btn {
+        font-size: 2.82vw;
+        line-height: 3.85vw;
+        padding: 2.05vw 3.59vw;
+
+        img {
+            width: 2.56vw;
+        }
+    }
+
+    .footer {
+        padding: 3.85vw 0;
+    }
+
+    .empty {
+        display: none;
+    }
+
+    .footer__copyright {
+        display: none;
+    }
+
+    .footer__links {
+        gap: 5.13vw;
+        padding: 0;
+        margin: auto;
+    }
+
+    .footer__icon {
+        width: 8.72vw;
     }
 
 

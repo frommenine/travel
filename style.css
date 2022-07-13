@@ -4,12 +4,12 @@ html {
 }
 
 * {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 body {
-  max-width: 1440px;
+  max-width: 1920px;
+  width: 100%;
   margin: auto;
 }
 
@@ -17,70 +17,65 @@ body {
   background-image: url(./assets/img/main-img.png);
   background-size: 100%;
   background-repeat: no-repeat;
-  min-height: 765px;
+  min-height: 39.84vw;
+  width: 100%;
+}
+
+.logo {
+  width: 11.25vw;
 }
 
 .logo-mobile,
-.menu-b {
+.menu-b,
+.logo-reload-mobile {
   display: none;
 }
 
 .nav {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   color: #FFFFFF;
-  height: 90px;
-  padding: 0 120px;
+  height: 4.69vw;
+  padding: 0 6.25vw;
   background: rgba(242, 120, 92, 0.7);
-  -webkit-box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
-          box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
+  box-shadow: 0px 4px 4px rgba(13, 96, 111, 0.5);
 }
 
 .nav__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
   list-style: none;
   gap: 42px;
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
   font-size: 16px;
+  font-size: 0.83vw;
   line-height: 21px;
 }
 
 .nav_link {
   color: #FFFFFF;
   text-decoration: none;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
 .nav_link:hover {
-  text-shadow: 1px -1px 0 #0d606fa8, 2px -2px 0 #0d606fa8, 3px -3px 0 #0d606fa8, 4px -4px 0 #0d606fa8, 5px -5px 0 #0d606fa8, 6px -6px 0 #0d606fa8, 7px -7px 0 #0d606fa8, 8px -8px 0 #0d606fa8;
+  text-shadow: 1px -1px 0 rgba(13, 96, 111, 0.6588235294), 2px -2px 0 rgba(13, 96, 111, 0.6588235294), 3px -3px 0 rgba(13, 96, 111, 0.6588235294), 4px -4px 0 rgba(13, 96, 111, 0.6588235294), 5px -5px 0 rgba(13, 96, 111, 0.6588235294), 6px -6px 0 rgba(13, 96, 111, 0.6588235294), 7px -7px 0 rgba(13, 96, 111, 0.6588235294), 8px -8px 0 rgba(13, 96, 111, 0.6588235294);
 }
 
 .nav__btn {
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
-  padding: 10px 30px;
+  font-size: 0.83vw;
+  line-height: 1.09vw;
+  padding: 0.52vw 1.56vw;
   color: #FFFFFF;
   background: #0D606F;
-  -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
-          box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25), 0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 10px;
   border: none;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
 
@@ -89,111 +84,99 @@ body {
 .stories__btn:hover,
 .preview__btn:hover {
   cursor: pointer;
-  background: #0d606fa8;
+  background: rgba(13, 96, 111, 0.6588235294);
 }
 
 .preview {
-  margin-top: 32px;
-  padding: 0 120px;
+  margin-top: 1.67vw;
+  padding: 0 6.25vw;
 }
 
 h1 {
-  font-family: 'Aleo';
+  font-family: "Aleo";
   font-style: normal;
   font-weight: 700;
-  font-size: 80px;
-  line-height: 96px;
+  font-size: 4.17vw;
+  line-height: 5vw;
   color: #FFFFFF;
 }
 
 .preview__info {
-  font-family: 'Aleo';
+  font-family: "Aleo";
   font-style: italic;
   font-weight: 700;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 1.04vw;
+  line-height: 1.25vw;
   color: #FFFFFF;
 }
 
 .preview__btn-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
+  justify-content: space-between;
+  align-items: center;
   background: rgba(255, 255, 255, 0.7);
   border-radius: 16px;
-  max-width: 892px;
-  height: 95px;
-  padding: 18px 18px 18px 41px;
+  width: 46.46vw;
+  height: 4.95vw;
+  padding: 0.94vw 0.94vw 0.94vw 2.14vw;
 }
 
 .preview__btn-wrap__text {
-  font-family: 'Aleo';
+  font-family: "Aleo";
   font-style: italic;
   font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
+  font-size: 1.25vw;
+  line-height: 1.51vw;
   color: #F2785C;
 }
 
 .preview__btn {
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.25vw;
+  line-height: 1.67vw;
   color: #FFFFFF;
   background: #0D606F;
-  -webkit-box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
-          box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 10px;
   border: none;
-  padding: 13px 32px;
-  -webkit-transition: all 0.5s;
+  padding: 0.68vw 1.67vw;
   transition: all 0.5s;
 }
 
 .steps {
-  padding: 80px 131px 127px 131px;
+  padding: 4.17vw 6.82vw 6.61vw 6.82vw;
 }
 
 .steps-title {
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
-  font-size: 40px;
-  line-height: 53px;
+  font-size: 2.08vw;
+  line-height: 2.76vw;
   color: #F2785C;
   text-align: center;
-  margin-bottom: 40px;
+  margin-bottom: 2.08vw;
 }
 
 .steps__list {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+  justify-content: space-between;
   list-style: none;
   text-align: center;
 }
 
 .steps-icon {
-  width: 100px;
+  width: 5.21vw;
 }
 
 .steps-text {
-  font-family: 'Aleo';
+  font-family: "Aleo";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 1.04vw;
+  line-height: 1.25vw;
   color: #0D606F;
 }
 
@@ -202,45 +185,37 @@ h1 {
 }
 
 .destinations-title {
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
-  font-weight: 700;
-  font-size: 40px;
-  line-height: 53px;
+  font-weight: 500;
+  font-size: 2.08vw;
+  line-height: 2.76vw;
   color: #F2785C;
   text-align: center;
-  margin-bottom: 46px;
+  margin-bottom: 2.4vw;
 }
 
 .destinations__img-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  gap: 60px;
+  justify-content: space-between;
+  gap: 3.13vw;
   overflow-x: hidden;
 }
 
 .destinations__img {
-  height: 800px;
+  height: 41.67vw;
 }
 
 .destinations__circles-wrap {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  gap: 10px;
-  margin: 24px auto 40px auto;
+  justify-content: center;
+  gap: 0.52vw;
+  margin: 1.25vw auto 2.08vw auto;
 }
 
 .destinations__circle {
-  width: 20px;
-  height: 20px;
+  width: 1.04vw;
+  height: 1.04vw;
   border-radius: 100%;
   background: rgba(242, 120, 92, 0.5);
 }
@@ -250,69 +225,63 @@ h1 {
 }
 
 .destinations__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 10px;
+  align-items: center;
+  gap: 0.52vw;
   margin: auto;
-  padding: 13px 31px;
-  font-family: 'Red Hat Text';
+  padding: 0.68vw 1.61vw;
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.25vw;
+  line-height: 1.67vw;
   color: #FFFFFF;
   background: #0D606F;
-  -webkit-box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
-          box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 10px;
   border: none;
-  margin-bottom: 80px;
-  -webkit-transition: all 0.5s;
+  margin-bottom: 4.17vw;
   transition: all 0.5s;
+}
+.destinations__btn img {
+  width: 2.08vw;
 }
 
 .stories-title {
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
-  font-size: 40px;
-  line-height: 53px;
+  font-size: 2.08vw;
+  line-height: 2.76vw;
   color: #F2785C;
   text-align: center;
 }
 
 .stories-wrap {
+  width: 100%;
   background-image: url(./assets/img/mainimg-2.png);
+  background-size: cover;
   background-repeat: no-repeat;
-  background-position: center 0;
+  background-position: bottom center;
+  margin-top: 0.52vw;
 }
 
 .stories-wrap-white {
   background: rgba(255, 255, 255, 0.7);
-  padding: 50px 120px 41px 119px;
+  padding: 2.6vw 6.25vw 2.14vw 6.2vw;
 }
 
 .stories__card {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 40px;
+  justify-content: center;
+  align-items: center;
+  gap: 2.08vw;
   margin: auto;
-  margin-bottom: 40px;
+  margin-bottom: 2.08vw;
 }
 
 .stories__card__img {
-  width: 400px;
+  width: 20.83vw;
 }
 
 .stories__card__img-mobile {
@@ -320,11 +289,11 @@ h1 {
 }
 
 .stories__card-title {
-  font-family: 'Aleo';
+  font-family: "Aleo";
   font-style: normal;
   font-weight: 400;
-  font-size: 35px;
-  line-height: 42px;
+  font-size: 1.82vw;
+  line-height: 2.19vw;
   color: #0D606F;
   margin: 0;
 }
@@ -334,181 +303,172 @@ h1 {
 }
 
 .stories__card-text {
-  font-family: 'Aleo';
+  font-family: "Aleo";
   font-style: normal;
   font-weight: 400;
-  font-size: 20px;
-  line-height: 24px;
+  font-size: 1.04vw;
+  line-height: 1.25vw;
   color: #0D606F;
   margin: 0;
 }
 
 .read-more {
   font-weight: 700;
-  line-height: 24px;
+  line-height: 1.25vw;
   -webkit-text-decoration-line: underline;
           text-decoration-line: underline;
 }
 
 .stories__btn {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 10px;
+  align-items: center;
+  gap: 0.52vw;
   margin: auto;
-  padding: 13px 31px;
-  font-family: 'Red Hat Text';
+  padding: 0.68vw 1.61vw;
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
-  font-size: 24px;
-  line-height: 32px;
+  font-size: 1.25vw;
+  line-height: 1.67vw;
   color: #FFFFFF;
   background: #0D606F;
-  -webkit-box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
-          box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
+  box-shadow: 0px 0px 3px rgba(13, 96, 111, 0.08), 0px 2px 3px rgba(13, 96, 111, 0.16);
   border-radius: 10px;
   border: none;
-  -webkit-transition: all 0.5s;
   transition: all 0.5s;
+}
+.stories__btn img {
+  width: 2.08vw;
 }
 
 .footer {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 40px;
-  padding: 0 120px;
+  justify-content: space-between;
+  align-items: center;
+  gap: 2.08vw;
+  padding: 0 6.25vw;
   background-image: url(./assets/img/mainimg-2.png);
+  background-size: cover;
   background-repeat: no-repeat;
   background-position: bottom center;
 }
 
 .empty {
-  width: 141px;
-  height: 61px;
+  width: 7.34vw;
+  height: 3.18vw;
 }
 
 .footer__links {
-  display: -webkit-box;
-  display: -ms-flexbox;
   display: flex;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  gap: 21px;
-  width: 141px;
+  align-items: center;
+  gap: 1.09vw;
 }
 
 .footer__copyright {
-  font-family: 'Red Hat Text';
+  font-family: "Red Hat Text";
   font-style: normal;
   font-weight: 500;
-  font-size: 16px;
-  line-height: 21px;
+  font-size: 0.83vw;
+  line-height: 1.09vw;
   color: #FFFFFF;
-  width: 260px;
+  width: 13.54vw;
 }
 
 .footer__icon {
-  width: 34px;
-  -webkit-transition: all 0.5s;
+  width: 1.77vw;
   transition: all 0.5s;
 }
 
 .footer__icon-2 {
-  width: 80px;
-  -webkit-transition: all 0.5s;
+  width: 4.17vw;
   transition: all 0.5s;
 }
 
 .footer__icon:hover,
 .footer__icon-2:hover {
-  -webkit-filter: invert(16%) sepia(10%) saturate(437%) hue-rotate(222deg) brightness(94%) contrast(84%);
-          filter: invert(16%) sepia(10%) saturate(437%) hue-rotate(222deg) brightness(94%) contrast(84%);
+  filter: invert(16%) sepia(10%) saturate(437%) hue-rotate(222deg) brightness(94%) contrast(84%);
 }
 
 @media (max-width: 390px) {
   .header {
-    min-height: 251px;
+    min-height: 64.36vw;
   }
   .nav {
-    padding: 0 15px;
+    padding: 0 3.85vw;
     background: transparent;
-    -webkit-box-shadow: none;
-            box-shadow: none;
-    background: -webkit-gradient(linear, left top, left bottom, from(#0D606F), color-stop(25.1%, rgba(13, 96, 111, 0)));
+    box-shadow: none;
     background: linear-gradient(180deg, #0D606F 0%, rgba(13, 96, 111, 0) 25.1%);
+    height: 23.08vw;
   }
   .nav__list,
-  .nav__btn,
-  .logo,
-  h1,
-  .preview__info {
+.nav__btn,
+.logo,
+h1,
+.preview__info {
     display: none;
   }
   .logo-mobile,
-  .menu-b {
+.menu-b,
+.logo-reload-mobile {
     display: block;
   }
+  .logo-mobile {
+    width: 7.69vw;
+  }
+  .menu-b {
+    width: 8.97vw;
+  }
   .preview {
-    padding: 0 15px;
-    margin-top: 22px;
+    padding: 0 3.85vw;
   }
   .preview__btn-wrap {
-    width: 360px;
-    height: 48px;
-    padding: 9px;
+    width: 92%;
+    height: 12.31vw;
+    padding: 2.31vw;
+    margin: auto;
+    margin-bottom: 15.64vw;
   }
   .preview__btn-wrap__text {
-    font-size: 14px;
-    line-height: 17px;
+    font-size: 3.59vw;
+    line-height: 4.36vw;
   }
   .preview__btn {
-    padding: 8px 9px;
-    font-size: 11px;
-    line-height: 15px;
+    padding: 2.05vw 2.31vw;
+    font-size: 2.82vw;
+    line-height: 3.85vw;
   }
   .steps,
-  .destinations {
-    padding: 0 15px;
+.destinations {
+    padding: 0 3.85vw;
   }
   .steps-title,
-  .destinations-title,
-  .stories-title {
-    font-size: 14px;
+.destinations-title,
+.stories-title {
+    font-size: 3.59vw;
     font-weight: 500;
-    line-height: 19px;
+    line-height: 4.87vw;
     margin: 0;
   }
   .steps__list {
     padding: 0;
   }
   .steps-icon {
-    width: 70px;
+    width: 17.95vw;
   }
   .steps-text {
-    font-size: 10px;
-    line-height: 12px;
+    font-size: 2.56vw;
+    line-height: 3.08vw;
   }
   .steps__item {
-    width: 111px;
+    width: 28.46vw;
   }
   .steps__item:nth-of-type(1) {
-    width: 75px;
+    width: 19.23vw;
     text-align: left;
   }
   .steps__item:nth-of-type(3) {
     text-align: right;
-    width: 83px;
+    width: 21.28vw;
   }
   .destinations__img-wrap {
     display: none;
@@ -516,35 +476,36 @@ h1 {
   .destinations__slide-mobile-wrap {
     display: block;
     position: relative;
-    margin-top: 20px;
+    margin-top: 5.13vw;
   }
   .destinations__img-mobile {
     position: relative;
     border-radius: 16px;
+    width: 92.31vw;
   }
   .prev,
-  .next {
+.next {
     position: absolute;
     top: 50%;
-    font-size: 30px;
+    font-size: 7.69vw;
   }
   .prev {
-    left: 11px;
+    left: 2.82vw;
     color: rgba(242, 120, 92, 0.5);
   }
   .next {
-    right: 11px;
+    right: 2.82vw;
     color: #F2785C;
   }
   .destinations__img-mobile-text {
     position: absolute;
-    top: 8px;
-    left: 15px;
-    font-family: 'Red Hat Text';
+    top: 2.05vw;
+    left: 3.85vw;
+    font-family: "Red Hat Text";
     font-style: normal;
     font-weight: 500;
-    font-size: 20px;
-    line-height: 26px;
+    font-size: 5.13vw;
+    line-height: 6.67vw;
     color: #FFFFFF;
     text-transform: uppercase;
     margin: 0;
@@ -554,44 +515,91 @@ h1 {
   }
   .destinations__circles-wrap-mobile {
     position: absolute;
-    bottom: 12px;
-    left: 162px;
-    display: -webkit-box;
-    display: -ms-flexbox;
+    bottom: 3.08vw;
+    left: 41.54vw;
     display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    gap: 6px;
+    justify-content: center;
+    gap: 1.54vw;
   }
   .destinations__circle {
-    width: 8px;
-    height: 8px;
+    width: 2.05vw;
+    height: 2.05vw;
   }
   .destinations__btn {
-    gap: 7px;
-    font-size: 11px;
-    line-height: 15px;
-    padding: 8px 12px;
-    margin: 10px auto 20px auto;
+    gap: 1.79vw;
+    font-size: 2.82vw;
+    line-height: 3.85vw;
+    padding: 2.05vw 3.08vw;
+    margin: 2.56vw auto 5.13vw auto;
   }
   .destinations__btn img {
-    width: 10px;
+    width: 2.56vw;
+  }
+  .stories-wrap {
+    background-image: url(./assets/img/mobile-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom -15.38vw;
+    margin-top: 2.56vw;
+  }
+  .footer {
+    background-image: url(./assets/img/mobile-bg.jpg);
+    background-repeat: no-repeat;
+    background-position: center bottom;
   }
   .stories-wrap-white {
-    padding: 10px 15px;
+    padding: 2.56vw 3.85vw;
+  }
+  .stories__card {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2.56vw;
+    margin: auto;
+    margin-bottom: 2.56vw;
   }
   .stories__card__img {
     display: none;
   }
   .stories__card__img-mobile-wrap {
-    width: 155px;
-    height: 130px;
+    width: 39.74vw;
+    height: 33.33vw;
     background-image: url(./assets/img/stories-1.png);
-    background-size: 100%;
+    background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
-    -webkit-filter: drop-shadow(0px 4px 4px #0D606F);
-            filter: drop-shadow(0px 4px 4px #0D606F);
+    filter: drop-shadow(0px 4px 4px #0D606F);
+    border-radius: 16px;
+  }
+  .stories__card__img-mobile-wrap-2 {
+    width: 39.74vw;
+    height: 33.33vw;
+    background-image: url(./assets/img/stories-2.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 4px 4px #0D606F);
+    border-radius: 16px;
+  }
+  .stories__card__img-mobile-wrap-3 {
+    width: 39.74vw;
+    height: 33.33vw;
+    background-image: url(./assets/img/stories-3.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 4px 4px #0D606F);
+    border-radius: 16px;
+  }
+  .stories__card__img-mobile-wrap-4 {
+    width: 39.74vw;
+    height: 33.33vw;
+    background-image: url(./assets/img/stories-4.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    filter: drop-shadow(0px 4px 4px #0D606F);
+    border-radius: 16px;
   }
   .stories__card-title {
     font-size: 11px;
@@ -603,13 +611,42 @@ h1 {
   }
   .stories__card-text-mobile {
     display: block;
-    font-family: 'Aleo';
+    font-family: "Aleo";
     font-style: normal;
     color: #0D606F;
     margin: 0;
     font-weight: 400;
-    font-size: 9px;
-    line-height: 11px;
+    font-size: 2.31vw;
+    line-height: 2.82vw;
+    width: 50vw;
+    margin-top: 2.56vw;
   }
-}
-/*# sourceMappingURL=style.css.map */
+  .read-more {
+    line-height: 2.82vw;
+  }
+  .stories__btn {
+    font-size: 2.82vw;
+    line-height: 3.85vw;
+    padding: 2.05vw 3.59vw;
+  }
+  .stories__btn img {
+    width: 2.56vw;
+  }
+  .footer {
+    padding: 3.85vw 0;
+  }
+  .empty {
+    display: none;
+  }
+  .footer__copyright {
+    display: none;
+  }
+  .footer__links {
+    gap: 5.13vw;
+    padding: 0;
+    margin: auto;
+  }
+  .footer__icon {
+    width: 8.72vw;
+  }
+}/*# sourceMappingURL=style.css.map */
