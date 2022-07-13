@@ -14,7 +14,8 @@
 <body>
     <header class="header">
         <nav class="nav">
-            <a href="./index.html" class="logo-reload"><img class="logo-mobile" src="./assets/img/logo-mobile.svg" alt="logo"></a>
+            <a href="./index.html" class="logo-reload"><img class="logo-mobile" src="./assets/img/logo-mobile.svg"
+                    alt="logo"></a>
             <a href="./index.html" class="logo-reload"><img class="logo" src="./assets/img/logo.svg" alt="logo"></a>
             <ul class="nav__list">
                 <li class="nav__item"><a class="nav_link" href="#preview">How It Works</a></li>
@@ -63,6 +64,14 @@
                 <p class="destinations__img-mobile-text">spain</p>
                 <!-- <img class="destinations__img-mobile" src="./assets/img/slide-mobile-2.jpg" alt="Japan">
                 <img class="destinations__img-mobile" src="./assets/img/slide-mobile-3.jpg" alt="USA"> -->
+                <a class="prev">&#10094</a>
+                <a class="next">&#10095</a>
+                <div class="destinations__circles-wrap-mobile">
+                    <div class="destinations__circle selected"></div>
+                    <div class="destinations__circle"></div>
+                    <div class="destinations__circle"></div>
+                </div>
+
             </div>
             <div class="destinations__img-wrap">
                 <img class="destinations__img" src="./assets/img/DESTINATIONS-1.png" alt="Spain">
@@ -77,58 +86,77 @@
             <button class="destinations__btn"><img src="./assets/img/arrow-right.svg" alt="arrow"> Find More</button>
         </section>
 
-        <!-- <section class="stories" id="stories">
+        <section class="stories" id="stories">
             <h2 class="stories-title">TRAVEL STORIES</h2>
             <div class="stories-wrap">
-                <div class="stories__card">
-                    <img class="stories__card__img" src="./assets/img/stories-1.png" alt="stories__card">
-                    <div class="stories__card_text-wrap">
-                        <h3 class="stories__card-title">10 Photos of Attractive Thailand</h3>
-                        <p class="stories__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                            irure
-                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur
-                            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                            laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <br> <span
-                                class="read-more">Read More</span></p>
-                    </div>
-                </div>
+                <div class="stories-wrap-white">
+                    <div class="stories__card">
+                        <img class="stories__card__img" src="./assets/img/stories-1.png" alt="stories__card">
+                      <div class="stories__card__img-mobile-wrap"></div>  
 
-                <div class="stories__card">
-                    <img class="stories__card__img" src="./assets/img/stories-2.png" alt="stories__card">
-                    <div class="stories__card_text-wrap">
-                        <h3 class="stories__card-title">Canyonlands National Park, Utah</h3>
-                        <p class="stories__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                            irure
-                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur
-                            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                            laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <br> <span
-                                class="read-more">Read More</span></p>
+                        <div class="stories__card_text-wrap">
+                            <h3 class="stories__card-title">10 Photos of Attractive Thailand</h3>
+                            <p class="stories__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur
+                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                est
+                                laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <br> <span
+                                    class="read-more">Read More</span></p>
+                            <p class="stories__card-text-mobile">Lorem ipsum dolor sit amet, consectetur adipiscing
+                                elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                                minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                                consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore
+                                eu fugiat nulla.Lorem ipsum dolor sit a... <br>
+                                <span class="read-more">Read More</span>
+                            </p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="stories__card">
-                    <img class="stories__card__img" src="./assets/img/stories-3.png" alt="stories__card">
-                    <div class="stories__card_text-wrap">
-                        <h3 class="stories__card-title">I left my heart in the Mountains!</h3>
-                        <p class="stories__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis
-                            nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
-                            irure
-                            dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-                            Excepteur
-                            sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est
-                            laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <br> <span
-                                class="read-more">Read More</span></p>
+                    <div class="stories__card">
+                        <img class="stories__card__img" src="./assets/img/stories-2.png" alt="stories__card">
+                        <div class="stories__card_text-wrap">
+                            <h3 class="stories__card-title">Canyonlands National Park, Utah</h3>
+                            <p class="stories__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur
+                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                est
+                                laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <br> <span
+                                    class="read-more">Read More</span></p>
+                        </div>
                     </div>
-                </div>
 
-                <div class="stories__card">
+                    <div class="stories__card">
+                        <img class="stories__card__img" src="./assets/img/stories-3.png" alt="stories__card">
+                        <div class="stories__card_text-wrap">
+                            <h3 class="stories__card-title">I left my heart in the Mountains!</h3>
+                            <p class="stories__card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
+                                do
+                                eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+                                quis
+                                nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute
+                                irure
+                                dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+                                Excepteur
+                                sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id
+                                est
+                                laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <br> <span
+                                    class="read-more">Read More</span></p>
+                        </div>
+                    </div>
+
+                    <div class="stories__card">
                     <img class="stories__card__img" src="./assets/img/stories-4.png" alt="stories__card">
                     <div class="stories__card_text-wrap">
                         <h3 class="stories__card-title">The Longest journey in my life!</h3>
@@ -142,12 +170,13 @@
                             laborum.Lorem ipsum dolor sit amet, consectetur adipiscing elit... <br> <span
                                 class="read-more">Read More</span></p>
                     </div>
+                    </div>
+                    <button class="stories__btn"><img src="./assets/img/arrow-right.svg" alt="arrow"> See More</button>
                 </div>
-                <button class="stories__btn"><img src="./assets/img/arrow-right.svg" alt="arrow"> See More</button>
             </div>
-        </section> -->
+        </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="empty"></div>
         <p class="footer__copyright">All Rights Reserved &copy; Travel Portal</p>
         <ul class="footer__links">
@@ -159,7 +188,7 @@
                         src="./assets/icons/akar-icons_twitter-filltwitter.svg" alt=""></a></li>
 
         </ul>
-    </footer> -->
+    </footer>
     <script src="./index.js"></script>
 </body>
 

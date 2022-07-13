@@ -261,11 +261,11 @@ h1 {
     transition: all 0.5s;
 }
 
-.stories {
-    background-image: url(./assets/img/mainimg-2.png);
-    background-repeat: no-repeat;
-    background-position: bottom;
-}
+// .stories {
+//     background-image: url(./assets/img/mainimg-2.png);
+//     background-repeat: no-repeat;
+//     background-position: bottom;
+// }
 
 .stories-title {
     font-family: 'Red Hat Text';
@@ -279,8 +279,15 @@ h1 {
 }
 
 .stories-wrap {
+    background-image: url(./assets/img/mainimg-2.png);
+    background-repeat: no-repeat;
+    background-position: center 0;
+}
+
+.stories-wrap-white {
     background: rgba(255, 255, 255, 0.7);
     padding: 50px 120px 41px 119px;
+
 }
 
 .stories__card {
@@ -295,7 +302,10 @@ h1 {
 
 .stories__card__img {
     width: 400px;
+}
 
+.stories__card__img-mobile {
+    display: none;
 }
 
 .stories__card-title {
@@ -306,6 +316,10 @@ h1 {
     line-height: 42px;
     color: #0D606F;
     margin: 0;
+}
+
+.stories__card-text-mobile {
+    display: none;
 }
 
 .stories__card-text {
@@ -436,7 +450,8 @@ h1 {
     }
 
     .steps-title,
-    .destinations-title {
+    .destinations-title,
+    .stories-title {
         font-size: 14px;
         font-weight: 500;
         line-height: 19px;
@@ -486,13 +501,21 @@ h1 {
         border-radius: 16px;
     }
 
-    .destinations__img-mobile::before {
-        content: "";
+    .prev,
+    .next {
         position: absolute;
-        top: 5px;
-        background-image: url(./assets/icons/arrow-stop.svg);
-        background-size: 100%;
-        background-position: center;
+        top: 50%;
+        font-size: 30px;
+    }
+
+    .prev {
+        left: 11px;
+        color: rgba(242, 120, 92, 0.5);
+    }
+
+    .next {
+        right: 11px;
+        color: #F2785C;
     }
 
     .destinations__img-mobile-text {
@@ -508,4 +531,81 @@ h1 {
         text-transform: uppercase;
         margin: 0;
     }
+
+    .destinations__circles-wrap {
+        display: none;
+    }
+
+    .destinations__circles-wrap-mobile {
+        position: absolute;
+        bottom: 12px;
+        left: 162px;
+        display: flex;
+        justify-content: center;
+        gap: 6px;
+    }
+
+    .destinations__circle {
+        width: 8px;
+        height: 8px;
+    }
+
+    .destinations__btn {
+        gap: 7px;
+        font-size: 11px;
+        line-height: 15px;
+        padding: 8px 12px;
+        margin: 10px auto 20px auto;
+
+        // margin-top: 10px;
+        img {
+            width: 10px;
+        }
+    }
+
+    .stories-wrap-white {
+        padding: 10px 15px;
+    }
+
+    .stories__card__img {
+        display: none;
+    }
+
+    .stories__card__img-mobile-wrap {
+        width: 155px;
+        height: 130px;
+        background-image: url(./assets/img/stories-1.png);
+        background-size: 100%;
+        background-repeat: no-repeat;
+        filter: drop-shadow(0px 4px 4px #0D606F);
+        // border-radius: 16px;
+    }
+
+    // .stories__card__img-mobile {
+    //     display: block;
+    //     width: 155px;
+    // }
+
+    .stories__card-title {
+        font-size: 11px;
+        line-height: 13px;
+        font-weight: 700;
+    }
+
+    .stories__card-text {
+        display: none;
+    }
+
+    .stories__card-text-mobile {
+        display: block;
+        font-family: 'Aleo';
+        font-style: normal;
+        color: #0D606F;
+        margin: 0;
+        font-weight: 400;
+        font-size: 9px;
+        line-height: 11px;
+    }
+
+
 }
