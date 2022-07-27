@@ -24,31 +24,40 @@ window.onclick = function (event) {
   }
 }
 
-
-function orderUSA() {
-  // document.getElementById("orderUSA").classList.toggle("changeOrder");
-  // document.getElementById("orderJapan").classList.toggle("changeOrder2");
-
-  // var itemListParent = document.querySelector('.destinations__img-wrap');
-  // var itemList = document.querySelectorAll('.slide-img');
-  // сработает как appendChild (т.к. второй аргумент null) - поместит второй элемент в конец родительского.
-  // itemListParent.insertBefore(itemList[1], null);
-  // сработает как того предполагает insertBefore() - вставит пятый элемент перед первым
-  // itemListParent.insertBefore(itemList[3], itemList[0]);
-
-}
-
-// function order1() {
-//   var itemListParent = document.querySelector('.destinations__img-wrap');
-//   var itemList = document.querySelectorAll('.slide-img');
-//   itemListParent.insertBefore(itemList[0], null);
-//   itemListParent.insertBefore(itemList[2], itemList[0]);
-// }
-
-
 function slideTwo() {
-  document.getElementsByClassName("destinations__img")[2].style = "transform: translateX(612px)";;
-  document.getElementsByClassName("destinations__img")[1].style = "transform: translateX(612px)";;
+  document.getElementById("one").classList.toggle("none");
+  document.getElementById("two").classList.toggle("none");
+  document.getElementById("three").classList.toggle("none");
+  document.getElementById("first").classList.toggle("selected");
+  document.getElementById("second").classList.toggle("selected");
+}
+
+function slideFour() {
+  document.getElementById("three").classList.toggle("none-prev");
+  document.getElementById("four").classList.toggle("none-prev");
+  document.getElementById("five").classList.toggle("none-prev");
+  document.getElementById("third").classList.toggle("selected");
+  document.getElementById("second").classList.toggle("selected");
+}
+
+function slideFive() {
+  document.getElementById("three").classList.toggle("none-prev");
+  document.getElementById("four").classList.toggle("none-prev");
+  document.getElementById("five").classList.toggle("none-prev");
+  document.getElementById("third").classList.toggle("selected");
+  document.getElementById("second").classList.toggle("selected");
+}
+
+function prevB() {
+  document.getElementById("img-mob1").classList.toggle("none-img");
+  document.getElementById("img-mob2").classList.toggle("none-img");
 
 }
- 
+
+function nextB() {
+  document.getElementById("img-mob1").classList.toggle("none-img");
+  document.getElementById("img-mob3").classList.toggle("none-img");
+
+}
+
+

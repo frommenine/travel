@@ -72,46 +72,53 @@
                 POPULAR DESTINATIONS
             </h2>
             <div class="destinations__slide-mobile-wrap">
-                <img class="destinations__img-mobile" src="./assets/img/slide-mobile-1.jpg" alt="Spain">
+                <img id="img-mob1" class="destinations__img-mobile" src="./assets/img/slide-mobile-1.jpg" alt="Spain">
                 <p class="destinations__img-mobile-text">spain</p>
-                <!-- <img class="destinations__img-mobile" src="./assets/img/slide-mobile-2.jpg" alt="Japan">
-                <img class="destinations__img-mobile" src="./assets/img/slide-mobile-3.jpg" alt="USA"> -->
-                <a class="prev">&#10094</a>
-                <a class="next">&#10095</a>
+                <img id="img-mob2"  class="destinations__img-mobile none-img" src="./assets/img/slide-mobile-2.jpg" alt="Japan">
+                <p class="destinations__img-mobile-text">usa</p>
+                <img id="img-mob3" class="destinations__img-mobile none-img" src="./assets/img/slide-mobile-3.jpg" alt="USA">
+                <p class="destinations__img-mobile-text">japan</p>
+                <a class="prev" onClick="prevB()">&#10094</a>
+                <a class="next" onClick="nextB()">&#10095</a>
                 <div class="destinations__circles-wrap-mobile">
-                    <div class="destinations__circle selected"></div>
-                    <div class="destinations__circle"></div>
-                    <div class="destinations__circle"></div>
+                    <div id="firstB" class="destinations__circle"></div>
+                    <div id="secondB" class="destinations__circle selected"></div>
+                    <div id="thirdB" class="destinations__circle"></div>
                 </div>
 
             </div>
             <div id="carousel" class="carousel">
                 <div class="destinations__img-wrap">
-                    <!-- <div class="prev"></div> -->
-
+                    <img class="destinations__img slide2" src="./assets/img/DESTINATIONS-1-1.png" alt="Spain">
+                    <!-- 0 -->
+                    <img id="null" onClick="slideNull()" class="destinations__img slide-img"
+                        src="./assets/img/DESTINATIONS-2.png" alt="Japan">
+                    <!-- 1 -->
+                    <img id="one" onClick="slideTwo()" class="destinations__img slide-img"
+                        src="./assets/img/DESTINATIONS-2-2.png" alt="USA">
+                    <!-- 2222222!!!!!! -->
+                    <img id="two" onClick="slideTwo()" class="destinations__img slide2"
+                        src="./assets/img/DESTINATIONS-1-1.png" alt="Spain">
+                    <!-- 3 -->
+                    <img id="three" onClick="slideThree()" class="destinations__img slide-img"
+                        src="./assets/img/DESTINATIONS-2.png" alt="Japan">
+                    <!-- 4 -->
+                    <img id="four" onClick="slideFour()" id="orderUSA" class="destinations__img slide-img"
+                        src="./assets/img/DESTINATIONS-2-2.png" alt="USA">
+                    <!-- 5 -->
+                    <img id="five" onClick="slideFive()" class="destinations__img slide-img"
+                        src="./assets/img/DESTINATIONS-1-1.png" alt="Spain">
+                    <!-- 6 -->
                     <img class="destinations__img slide-img" src="./assets/img/DESTINATIONS-2.png" alt="Japan">
-
                     <img id="orderUSA" class="destinations__img slide-img" src="./assets/img/DESTINATIONS-2-2.png"
                         alt="USA">
 
-                    <img onClick="slideTwo()" class="destinations__img slide2" src="./assets/img/DESTINATIONS-1-1.png"
-                        alt="Spain">
-
-                    <img class="destinations__img slide-img" src="./assets/img/DESTINATIONS-2.png" alt="Japan">
-
-                    <img id="orderUSA" class="destinations__img slide-img" src="./assets/img/DESTINATIONS-2-2.png"
-                        alt="USA">
-                    <img class="destinations__img slide-img" src="./assets/img/DESTINATIONS-1-1.png" alt="Spain">
-
-                    <img class="destinations__img slide-img" src="./assets/img/DESTINATIONS-2.png" alt="Japan">
-
-                    <div class="next"></div>
                 </div>
             </div>
             <div class="destinations__circles-wrap">
-                <div class="destinations__circle"></div>
-                <div class="destinations__circle selected"></div>
-                <div class="destinations__circle"></div>
+                <div id="first" class="destinations__circle"></div>
+                <div id="second" class="destinations__circle selected"></div>
+                <div id="third" class="destinations__circle"></div>
             </div>
             <button class="destinations__btn"><img src="./assets/img/arrow-right.svg" alt="arrow"> Find More</button>
         </section>
