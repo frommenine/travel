@@ -11,11 +11,11 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body>
+<body class="a1">
     <header class="header">
         <nav class="nav">
-            <a href="./index.html" class="logo-reload-mobile"><img class="logo-mobile" src="./assets/img/logo-mobile.svg"
-                    alt="logo"></a>
+            <a href="./index.html" class="logo-reload-mobile"><img class="logo-mobile"
+                    src="./assets/img/logo-mobile.svg" alt="logo"></a>
             <a href="./index.html" class="logo-reload"><img class="logo" src="./assets/img/logo.svg" alt="logo"></a>
             <ul class="nav__list">
                 <li class="nav__item"><a class="nav_link" href="#preview">How It Works</a></li>
@@ -24,7 +24,19 @@
                 <li class="nav__item"><a class="nav_link" href="#stories">Travel Stories</a></li>
             </ul>
             <button class="nav__btn">Login</button>
-            <img class="menu-b" src="./assets/img/burger-menu.svg" alt="burger menu icon">
+            <img onclick="myFunction()" class="menu-b dropbtn" src="./assets/img/burger-menu.svg"
+                alt="burger menu icon">
+            <div id="myDropdown" class="burger-menu dropdown-content">
+                <img id="remove" class="close-burger-icon" src="./assets/icons/close-burger.svg" alt="close menu">
+                <ul class="burger-menu__list">
+                    <li class="burger-menu__item"><a class="nav_link" href="#preview">How It Works</a></li>
+                    <li class="burger-menu__item"><a class="nav_link" href="#steps">Plan Your Trip</a></li>
+                    <li class="burger-menu__item"><a class="nav_link" href="#destinations">Destinations</a></li>
+                    <li class="burger-menu__item"><a class="nav_link" href="#stories">Travel Stories</a></li>
+                    <li class="burger-menu__item">Account</li>
+                    <li class="burger-menu__item"><a class="nav_link" href="#footer">Social Media</a></li>
+                </ul>
+            </div>
         </nav>
         <section class="preview" id="preview">
             <h1>Explore the beauty of <br> the World</h1>
@@ -73,10 +85,28 @@
                 </div>
 
             </div>
-            <div class="destinations__img-wrap">
-                <img class="destinations__img" src="./assets/img/DESTINATIONS-1.png" alt="Spain">
-                <img class="destinations__img" src="./assets/img/DESTINATIONS-2.png" alt="Japan">
-                <img class="destinations__img" src="./assets/img/DESTINATIONS-3.png" alt="USA">
+            <div id="carousel" class="carousel">
+                <div class="destinations__img-wrap">
+                    <!-- <div class="prev"></div> -->
+
+                    <img class="destinations__img slide-img" src="./assets/img/DESTINATIONS-2.png" alt="Japan">
+
+                    <img id="orderUSA" class="destinations__img slide-img" src="./assets/img/DESTINATIONS-2-2.png"
+                        alt="USA">
+
+                    <img onClick="slideTwo()" class="destinations__img slide2" src="./assets/img/DESTINATIONS-1-1.png"
+                        alt="Spain">
+
+                    <img class="destinations__img slide-img" src="./assets/img/DESTINATIONS-2.png" alt="Japan">
+
+                    <img id="orderUSA" class="destinations__img slide-img" src="./assets/img/DESTINATIONS-2-2.png"
+                        alt="USA">
+                    <img class="destinations__img slide-img" src="./assets/img/DESTINATIONS-1-1.png" alt="Spain">
+
+                    <img class="destinations__img slide-img" src="./assets/img/DESTINATIONS-2.png" alt="Japan">
+
+                    <div class="next"></div>
+                </div>
             </div>
             <div class="destinations__circles-wrap">
                 <div class="destinations__circle"></div>
@@ -203,7 +233,7 @@
             </div>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer" id="footer">
         <div class="empty"></div>
         <p class="footer__copyright">All Rights Reserved &copy; Travel Portal</p>
         <ul class="footer__links">
